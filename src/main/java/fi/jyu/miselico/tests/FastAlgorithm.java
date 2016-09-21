@@ -31,12 +31,15 @@ public class FastAlgorithm {
 	}
 
 	void addElement(int element) {
-		Element newE = new Element(element, r_t * r.nextDouble());
-		collection.add(newE);
-		Element temp;
-		while ((temp = collection.peek()) != null && temp.randomNumber < X) {
-			collection.poll();
-		}
+        int randomNumber = r_t * r.nextDouble();
+        if (randomNumber >= X){
+    		Element newE = new Element(element, randomNumber);
+	    	collection.add(newE);
+	    	Element temp;
+	    	while ((temp = collection.peek()) != null && temp.randomNumber < X) {
+		    	collection.poll();
+		    }
+        }
 		X = X / alpha;
 		r_t = r_t / alpha;
 	}
