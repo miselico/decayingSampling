@@ -7,6 +7,13 @@ import java.util.concurrent.TimeUnit;
 
 import com.google.common.base.Stopwatch;
 
+
+/**
+ TODO: use http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html or http://www.apfloat.org/apfloat_java/
+ 
+ TODO: split adding and forwarding of clock
+ 
+ */
 public class FastAlgorithm {
 
 	private final double T;
