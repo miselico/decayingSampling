@@ -9,6 +9,13 @@ import com.google.common.base.Stopwatch;
 
 public class FastAlgorithm {
 
+	/**
+	 TODO: use http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html or http://www.apfloat.org/apfloat_java/
+	 
+	 TODO: split adding and forwarding of clock
+	 
+	 */
+	
 	private final double T;
 	private final double alpha;
 	private final Random r;
