@@ -1,4 +1,4 @@
-package fi.jyu.miselico.tests;
+package de.fraunhofer.fit.cochez.decayingsampling;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
